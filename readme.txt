@@ -11,4 +11,3 @@ This Repository offers all necessary files to reproduce the attacks demonstrated
 	-Denial of Service: First start htop to monitor the CPU usage prior to the attack. Navigate to the "unencrypted SSL Attack" folder and run "sudo docker compose up".
 	Then open a second bash to run the following command: openssl s_client -connect localhost:1883
 	-CPU exhaustion should now be visible at 100% in htop
-6. Leftover Certificate files can be ignored.
