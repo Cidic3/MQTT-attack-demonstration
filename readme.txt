@@ -1,3 +1,5 @@
+This Repository offers all necessary files to reproduce the attacks demonstrated in my paper "Insecure by Design: A Practical Analysis of MQTT Security Risks and Attacks".
+
 1. Before trying to replicate the attacks, make sure you have Docker, Wireshark and htop installed. This can be done in a bash with "apt install Wireshark" for example. If this doesn't work there are plenty of tutorials online. 
 2. To configure broker properties, edit the "docker-compose" file.
 	-You can add new users and passwords under "entrypoint"
