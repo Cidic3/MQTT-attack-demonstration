@@ -7,7 +7,7 @@ This Repository offers all necessary files to reproduce the attacks demonstrated
 3. To start the Docker containers, navigate to the directory of the desired folder and use the command "sudo docker compose up"
 4. Use "sudo Wireshark" and "sudo htop" to start the corresponding applications
 5. The following commands have been used for my attacks:
-	-Unencrypted Communication: Navigate to the "encrypted CPU Exhaust" Folder. Start the Docker Containers via "sudo docker compose up". A docker container has been set up 	to automatically connect and publish information every 20 seconds after start up. Simply track packages in Wireshark.
-	-Denial of Service: First start htop to monitor the CPU usage prior to the attack. Navigate to the "unencrypted SSL Attack" folder and run "sudo docker compose up".
+	-Unencrypted Communication: Navigate to the "unencrypted communication" Folder. Start the Docker Containers via "sudo docker compose up". A docker container has been set 	up to automatically connect and publish information every 20 seconds after start up. Simply track packages in Wireshark.
+	-Denial of Service: First start htop to monitor the CPU usage prior to the attack. Navigate to the "encrypted CPU Exhaust" folder and run "sudo docker compose up".
 	Then open a second bash to run the following command: openssl s_client -connect localhost:1883
 	-CPU exhaustion should now be visible at 100% in htop
