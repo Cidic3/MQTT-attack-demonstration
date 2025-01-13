@@ -4,7 +4,7 @@ This Repository offers all necessary files to reproduce the attacks demonstrated
 2. To configure broker properties, edit the "docker-compose" file.
 	-You can add new users and passwords under "entrypoint"
 	-To edit the connect and publish frequencies, edit "sleep" under "entrypoint" to the desired value
-3. To start the Docker containers, navigate to the directory of the "unencrypted" folder and use the command "sudo docker compose up"
+3. To start the Docker containers, navigate to the directory of the desired folder and use the command "sudo docker compose up"
 4. Use "sudo Wireshark" and "sudo htop" to start the corresponding applications
 5. The following commands have been used for my attacks:
 	-Unencrypted Communication: Navigate to the "encrypted CPU Exhaust" Folder. Start the Docker Containers via "sudo docker compose up". A docker container has been set up 	to automatically connect and publish information every 20 seconds after start up. Simply track packages in Wireshark.
